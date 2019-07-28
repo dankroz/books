@@ -42,6 +42,7 @@ class Books extends Component {
 
   handleFormSubmit = event => {
     event.preventDefault();
+    console.log("submit clicked")
     if (this.state.title && this.state.author) {
       API.saveBook({
         title: this.state.title,
